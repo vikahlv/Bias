@@ -3,7 +3,7 @@ Last modified: 2021-05-02
 Author: Viktor H. Ahlqvist
 
 The idea is to:
- Markup : 1. Create individual level data
+1. Create individual level data
 2. Perform regression
 3. Store the estimate
 4. Repeat 100 times and avreage
