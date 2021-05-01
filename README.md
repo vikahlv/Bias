@@ -45,7 +45,7 @@ Here is a small simulation I wrote
 	return scalar y_b_x_z1_u = _b[x]
 	end
 ```
-We can now allow Z effect to vary from 1 tp 2 via args function (row 25 linked to row 54), and output our results to a relevant postfile
+We can now allow Z effect to vary from 1 tp 2 via args function (row 25 linked to row 54), and output our results to a relevant postfile (change the location!)
 ```	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "XXXXXXXXXXXXXXXXXXXXX" , replace
