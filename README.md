@@ -1,13 +1,14 @@
 Last modified: 2021-05-02
 Author: Viktor H. Ahlqvist
 
-**The idea is to:**
+<strong>
+The idea is to:
 1. Create individual level data
 2. Perform regression
 3. Store the estimate
 4. Repeat 100 times and avreage
 5. Modify input paramaters (right now as args on linte 24 and 51)
-**
+</strong>
 
 	set seed 1
 	clear*
