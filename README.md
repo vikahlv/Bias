@@ -1,8 +1,9 @@
-## Last modified: 2021-05-02
-## Author: Viktor H. Ahlqvist
+# Monte Carlo simulation of varying confounding by indication
+Last modified: 2021-05-02
+Author: Viktor H. Ahlqvist
 
 The idea is to:
-1. Create individual level data
+ Markup : 1. Create individual level data
 2. Perform regression
 3. Store the estimate
 4. Repeat 100 times and avreage
