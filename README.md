@@ -1,6 +1,6 @@
 # Monte Carlo simulation of varying confounding by indication
-Last modified: 2021-05-02
-Author: Viktor H. Ahlqvist
+#### Last modified: 2021-05-02
+#### Author: Viktor H. Ahlqvist
 
 The idea is to:
 1. Create individual-level data
@@ -12,6 +12,7 @@ The idea is to:
 Here is a small simulation I wrote:
 
 ```
+	version 15.1
 	set seed 1
 	clear*
 	program myreg, rclass
