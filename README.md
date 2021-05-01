@@ -1,16 +1,14 @@
-*2021-04-26
-**
-/* The idea is to
-1) create individual level data,
-2) perform regression
-3) store the estimate 
-4) repeat 100 times and avreage
-5) modify input paramaters (right now as args on linte 24 and 51)
-*/
-	**
+Last modified: 2021-04-26
+
+The idea is to:
+1. create individual level data,
+2. perform regression
+3. store the estimate 
+4. repeat 100 times and avreage
+5. modify input paramaters (right now as args on linte 24 and 51)
+
 	set seed 1
 	clear*
-
 	program myreg, rclass
 	clear
 	set obs 10000
@@ -44,7 +42,8 @@
 	return scalar y_b_x_z1_u = _b[x]
 	end
 
-/* with Z effect varying from 1.25 up until 2 via args function in myreg nad the i local below */
+With Z effect varying from 1.25 up until 2 via args function in myreg nad the i local below
+	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "C:\Users\vikahl\OneDrive - KI.SE\Skrivbordet\Indication-based sampling\Data\Sim_Results.dta" , replace
 	forvalues i = 1(.01)2 {
