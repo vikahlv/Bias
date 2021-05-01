@@ -1,6 +1,6 @@
 Last modified: 2021-04-26
 
-**The idea is to:
+*The idea is to:
 1. Create individual level data
 2. Perform regression
 3. Store the estimate
