@@ -1,6 +1,7 @@
-Last modified: 2021-04-26
+Last modified: 2021-05-02
+Author: Viktor H. Ahlqvist
 
-**The idea is to:
+**The idea is to:**
 1. Create individual level data
 2. Perform regression
 3. Store the estimate
