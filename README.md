@@ -1,5 +1,5 @@
-##Last modified: 2021-05-02
-##Author: Viktor H. Ahlqvist
+## Last modified: 2021-05-02
+## Author: Viktor H. Ahlqvist
 
 The idea is to:
 1. Create individual level data
@@ -20,7 +20,6 @@ The idea is to:
 	local b1 = 10
 	local b2 = 2
 	args b3
-
 	gen z = .
 	gen u = .
 	gen x = .
