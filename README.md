@@ -73,7 +73,7 @@ simulate y_b_x = r(y_b_x) y_b_x_z1 = r(y_b_x_z1) y_b_x_z_u = r(y_b_x_z_u) y_b_x_
 	gen crude_bias = (crude_or_X/truth_or_X)-1
 	egen mean_crude_bias = mean(crude_bias)
 	
-keep in 1/1
+	keep in 1/1
 post `memhold' (mean_crude_or_X) (mean_z1_or_x) (mean_truth_or_X) (mean_z0_or_x) (z_y_effect) (mean_crude_bias) (mean_z1_bias)
 	}
 postclose `memhold'	
