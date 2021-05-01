@@ -3,13 +3,14 @@ Last modified: 2021-05-02
 Author: Viktor H. Ahlqvist
 
 The idea is to:
-1. Create individual level data
+1. Create individual-level data
 2. Perform regression
 3. Store the estimate
-4. Repeat 100 times and avreage
-5. Modify input paramaters (right now as args on linte 24 and 51)
+4. Repeat 100 times and average
+5. Modify input parameters (right now as args on line 24 and 51)
 
-Here is a small simulation I wrote
+Here is a small simulation I wrote:
+
 ```
 	set seed 1
 	clear*
@@ -45,7 +46,7 @@ Here is a small simulation I wrote
 	return scalar y_b_x_z1_u = _b[x]
 	end
 ```
-We can now allow Z effect to vary from 1 tp 2 via args function (row 25 linked to row 54), and output our results to a relevant postfile (change the location!)
+We can now allow the Z effect to vary from 1 to 2 via args function (row 25 linked to row 54), and output our results to a relevant postfile (change the location!)
 ```	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "XXXXXXXXXXXXXXXXXXXXX" , replace
