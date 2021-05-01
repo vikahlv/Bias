@@ -7,7 +7,7 @@ The idea is to:
 3. Store the estimate
 4. Repeat 100 times and avreage
 5. Modify input paramaters (right now as args on linte 24 and 51)
-
+```
 	set seed 1
 	clear*
 	program myreg, rclass
@@ -42,9 +42,9 @@ The idea is to:
 	glm y x u if z==1, family(binomial) link(log) eform
 	return scalar y_b_x_z1_u = _b[x]
 	end
-
+```
 With Z effect varying from 1.25 up until 2 via args function in myreg nad the i local below
-	
+```	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "C:\Users\vikahl\OneDrive - KI.SE\Skrivbordet\Indication-based sampling\Data\Sim_Results.dta" , replace
 	forvalues i = 1(.01)2 {
@@ -78,3 +78,4 @@ With Z effect varying from 1.25 up until 2 via args function in myreg nad the i 
 	postclose `memhold'	
 
 
+```
