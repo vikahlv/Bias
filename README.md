@@ -8,6 +8,8 @@ The idea is to:
 3. Store the estimate
 4. Repeat 100 times and avreage
 5. Modify input paramaters (right now as args on linte 24 and 51)
+
+Here is a small simulation I wrote
 ```
 	set seed 1
 	clear*
@@ -43,13 +45,13 @@ The idea is to:
 	return scalar y_b_x_z1_u = _b[x]
 	end
 ```
-With Z effect varying from 1.25 up until 2 via args function in myreg nad the i local below
+We can now allow Z effect to vary from 1 tp 2 via args function (row 25 linked to row 54), and output our results to a relevant postfile
 ```	
 	tempname memhold
-	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "C:\Users\vikahl\OneDrive - KI.SE\Skrivbordet\Indication-based sampling\Data\Sim_Results.dta" , replace
+	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "XXXXXXXXXXXXXXXXXXXXX" , replace
 	forvalues i = 1(.01)2 {
 	simulate y_b_x = r(y_b_x) y_b_x_z1 = r(y_b_x_z1) y_b_x_z_u = r(y_b_x_z_u) y_b_x_z0 = r(y_b_x_z0), ///
-	    reps(100): myreg `i'
+	    reps(100): sim `i'
 	
 	gen crude_or_X = exp(y_b_x)
 	egen mean_crude_or_X = mean(crude_or_X)
