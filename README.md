@@ -1,4 +1,4 @@
-# Monte Carlo simulation with varying Z→Y
+# Simulation with varying Z→Y
 #### Last modified: 2021-05-02
 #### Author: Viktor H. Ahlqvist
 
