@@ -1,4 +1,4 @@
-# Simulation with varying Z→Y
+# Z-Bias simulation with varying Z→Y
 #### Last modified: 2021-05-02
 #### Author: Viktor H. Ahlqvist
 
