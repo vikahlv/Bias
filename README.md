@@ -1,4 +1,4 @@
-# Monte Carlo simulation of varying confounding by indication
+# Monte Carlo simulation of with varying Z->Y
 #### Last modified: 2021-05-02
 #### Author: Viktor H. Ahlqvist
 
