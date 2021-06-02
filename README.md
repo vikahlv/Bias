@@ -10,6 +10,7 @@ The simulations are performed as follows:
 5. Modify input parameters
 
 #### All simulation code is available under their respective folder as do-files for Stata version 15.1
+##### Feel free to report issues here or send me an email.
 
 The general code for the simulations looks as follows:
 
