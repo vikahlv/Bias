@@ -23,9 +23,8 @@ The general simulation runs as follows:
 	local a2 = 10
 	local b0 = 0.01
 	local b1 = 10
-	local b2 = 2
-	local b3
-	<color=red>args ===== XXX</color=red>
+	local b2 = 1
+	local b3 = 1.5
 	gen z = .
 	gen u = .
 	gen x = .
@@ -48,7 +47,7 @@ The general simulation runs as follows:
 	return scalar y_b_x_z1_u = _b[x]
 	end
 ```
-In order to run the simulation, we can vary the input parameters
+In order to run the simulation, we can vary the input parameters by replacing an input parameter argument i
 ```	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "XXXXXXXXXXXXXXXXXXXXX" , replace
