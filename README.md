@@ -1,4 +1,4 @@
-# Bias amplification in pharmacoepidemiology when studying individuals with therapy indication
+# Bias amplification simulations
 #### Last modified: 2021-06-02
 #### Author: Viktor H. Ahlqvist
 
