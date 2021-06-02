@@ -2,12 +2,14 @@
 #### Last modified: 2021-06-02
 #### Author: Viktor H. Ahlqvist
 
-The idea is to:
+The consistent simulations are performed as follows:
 1. Create individual-level data
 2. Perform regression
 3. Store the estimate
 4. Repeat 100 times and average
 5. Modify input parameters
+
+#### All simulation code is available under XXX as do-files for Stata version 15.1
 
 The general simulation runs as follows:
 
