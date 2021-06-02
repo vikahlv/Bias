@@ -9,7 +9,7 @@ The simulations are performed as follows:
 4. Repeat 100 times and average
 5. Modify input parameters
 
-#### All simulation code is available under XXX as do-files for Stata version 15.1
+#### All simulation code is available under their respective folder as do-files for Stata version 15.1
 
 The general code for the simulations looks as follows:
 
