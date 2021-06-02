@@ -2,7 +2,7 @@
 #### Last modified: 2021-06-02
 #### Author: Viktor H. Ahlqvist
 
-The consistent simulations are performed as follows:
+The simulations are performed as follows:
 1. Create individual-level data
 2. Perform regression
 3. Store the estimate
@@ -11,7 +11,7 @@ The consistent simulations are performed as follows:
 
 #### All simulation code is available under XXX as do-files for Stata version 15.1
 
-The general simulation runs as follows:
+The general code for the simulations looks as follows:
 
 ```
 	version 15.1
