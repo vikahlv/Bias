@@ -1,4 +1,4 @@
-# Bias amplification simulations
+# Bias simulations
 #### Last modified: 2021-06-02
 #### Author: Viktor H. Ahlqvist
 
