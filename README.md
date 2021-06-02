@@ -1,5 +1,5 @@
-# Z-Bias simulation with varying Z→Y
-#### Last modified: 2021-05-02
+# Bias amplification in pharmacoepidemiology when studying individuals with therapy indication
+#### Last modified: 2021-06-02
 #### Author: Viktor H. Ahlqvist
 
 The idea is to:
@@ -7,9 +7,9 @@ The idea is to:
 2. Perform regression
 3. Store the estimate
 4. Repeat 100 times and average
-5. Modify input parameters (right now as args on line 24 and 51)
+5. Modify input parameters
 
-Here is a small simulation I wrote:
+The general simulation runs as follows:
 
 ```
 	version 15.1
@@ -24,7 +24,8 @@ Here is a small simulation I wrote:
 	local b0 = 0.01
 	local b1 = 10
 	local b2 = 2
-	args b3
+	local b3
+	<color=red>args ===== XXX</color=red>
 	gen z = .
 	gen u = .
 	gen x = .
@@ -47,7 +48,7 @@ Here is a small simulation I wrote:
 	return scalar y_b_x_z1_u = _b[x]
 	end
 ```
-We can now allow the Z effect to vary from 1 to 2 via args function (row 25 linked to row 54), and output our results to a relevant postfile (change the location!)
+In order to run the simulation, we can vary the input parameters
 ```	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "XXXXXXXXXXXXXXXXXXXXX" , replace
