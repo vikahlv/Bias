@@ -8,7 +8,7 @@ The idea is to:
 2. Perform regression
 3. Store the estimate
 4. Repeat 100 times and average
-5. Modify input parameters (right now as args on line 24 and 51)
+5. Modify input parameters
 6. Here is a small simulation I wrote:
 
 */
