@@ -24,9 +24,9 @@ The general code for the simulations looks as follows:
 	local a1 = 1.5
 	local a2 = 10
 	local b0 = 0.01
-	local b1 = 10
+	local b1 = 1.5
 	local b2 = 1
-	local b3 = 1.5
+	local b3 = 1.25
 	gen z = .
 	gen u = .
 	gen x = .
