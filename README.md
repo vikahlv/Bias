@@ -79,7 +79,7 @@ In order to run the simulation, we can vary the input parameters (locals above -
 	egen mean_crude_bias = mean(crude_bias)
 	
 	keep in 1/1
-	post `memhold' (mean_crude_or_X) (mean_z1_or_x) (mean_truth_or_X) (mean_z0_or_x) (z_y_effect) (mean_crude_bias) (mean_z1_bias)
+	post `memhold' (mean_crude_or_X) (mean_z1_or_x) (mean_truth_or_X) (mean_z0_or_x) (level_of_i) (mean_crude_bias) (mean_z1_bias)
 	}
 	postclose `memhold'	
 
