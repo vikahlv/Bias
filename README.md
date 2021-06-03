@@ -49,7 +49,7 @@ The general code for the simulations looks as follows:
 	return scalar y_b_x_z1_u = _b[x]
 	end
 ```
-In order to run the simulation, we can vary the input parameters by replacing an input parameter argument i
+In order to run the simulation, we can vary the input parameters (locals above - for example b1) by replacing an input parameter with the argument i and store the average in a postfile (XXX).
 ```	
 	tempname memhold
 	postfile `memhold' mean_crude_or_X mean_z1_or_x mean_truth_or_X mean_z0_or_x z_y_effect mean_crude_bias mean_z1_bias using "XXXXXXXXXXXXXXXXXXXXX" , replace
@@ -70,7 +70,7 @@ In order to run the simulation, we can vary the input parameters by replacing an
 	egen mean_z0_or_x = mean(z0_or_x)
 	
 	
-	gen z_y_effect =  `i'
+	gen level_of_i =  `i'
 	
 	gen z1_bias = (z1_or_x/truth_or_X)-1
 	egen mean_z1_bias = mean(z1_bias)
